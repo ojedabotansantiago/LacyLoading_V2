@@ -1,9 +1,12 @@
 {
 	"folders": [
-		{
-			"path": "."
-		}
-	],
+    {
+      "path": "."
+    },
+    {
+      "path": "../../segurCaixa/dev-taller-cm-angular-apps"
+    }
+  ],
   "settings": {
     "workbench.colorCustomizations": {
       "activityBar.activeBackground": "#26394d",
