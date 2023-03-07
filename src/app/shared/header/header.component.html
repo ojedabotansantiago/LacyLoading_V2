@@ -1,15 +1,17 @@
-<mat-sidenav-container class="sidenav-container">
+<mat-toolbar>
+  <span>Heinet</span>
+  <span class="example-spacer"></span>
+  
+  <mat-sidenav-container class="sidenav-container">
+    <span>Heinet</span>
+  
+    <mat-tab-group>
+      <mat-tab label="First"></mat-tab>
+      <mat-tab label="Second"></mat-tab>
+      <mat-tab label="Third"></mat-tab>
+    </mat-tab-group>
+  </mat-sidenav-container>
 
-  <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <span>Heinet</span>
-      <mat-tab-group [color]="'white'" >
-        <mat-tab label="First"></mat-tab>
-        <mat-tab label="Second"></mat-tab>
-        <mat-tab label="Third"></mat-tab>
-      </mat-tab-group>
-    </mat-toolbar>
+</mat-toolbar>
 
-    <!-- Add Content Here -->
-  </mat-sidenav-content>
-</mat-sidenav-container>
+
