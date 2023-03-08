@@ -25,11 +25,11 @@ const routes: Routes = [
 
 
 @NgModule({
-  declarations: [BillsComponent],
+  declarations: [],
   imports: [
     RouterModule.forChild(routes),
-    TranslateModule
-  ]
+  ],
+  exports: [RouterModule]
 })
 export class BillsRoutingModule { }
 
