@@ -9,8 +9,11 @@ const routes: Routes = [
   {
     path: 'bills', 
     loadChildren: () => import('./domains/bills/bills.module').then(m => m.BillsModule),
-  }
- 
+  },
+  {
+    path: '**',
+    redirectTo: 'dashBoard',
+  } 
 ];
 
 @NgModule({

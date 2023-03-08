@@ -10,6 +10,7 @@ export class BillsDetailComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log('laded BillsDetailComponent');
   }
 
 }

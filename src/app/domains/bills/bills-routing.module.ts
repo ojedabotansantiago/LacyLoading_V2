@@ -13,7 +13,11 @@ const routes: Routes = [
         loadChildren: () => import('./bills-detail/bills-detail.module').then(m => m.BillsDetailModule)
       }
     ]
-  }
+  },
+  {
+    path: 'dashBoard', 
+    loadChildren: () => import('../dashboard/dashboard.module').then(m => m.DashboardModule),
+  },
 ];
 
 @NgModule({

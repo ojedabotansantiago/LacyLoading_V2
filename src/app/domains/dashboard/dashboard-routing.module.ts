@@ -7,10 +7,6 @@ const routes: Routes =[
   {
     path:'',
     component: DashboardComponent
-  },
-  {
-    path: 'dasBoard/bills',
-    loadChildren: () => import('../bills/bills.module').then(m => {m.BillsModule})
   }
 ]
 

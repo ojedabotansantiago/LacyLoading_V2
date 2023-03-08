@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BillsDetailComponent } from './bills-detail.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [BillsDetailComponent],
   imports: [
-    CommonModule
+    CommonModule,    
   ]
 })
 export class BillsDetailModule { }
