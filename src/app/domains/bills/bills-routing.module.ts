@@ -16,7 +16,7 @@ const routes: Routes = [
         path: 'detail',
         component: BillsDetailComponent
       },
-      { path: '**', redirectTo: 'detail' }
+      { path: '**', redirectTo: '' }
     ]
   }
 ];
