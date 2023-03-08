@@ -9,11 +9,11 @@ import { TranslateModule } from '@ngx-translate/core';
 @NgModule({
   declarations: [
     BillsComponent,
+    BillsDetailComponent
   ],
   imports: [
     TranslateModule,
     BillsRoutingModule,
-
   ]
 })
 export class BillsModule { }

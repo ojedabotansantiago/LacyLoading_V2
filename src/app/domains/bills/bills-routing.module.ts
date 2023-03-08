@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { BillsComponent } from './bills.component';
 import { BillsDetailComponent } from './bills-detail/bills-detail.component';
-import { BillsDetailModule } from './bills-detail/bills-detail.module';
 
 const routes: Routes = [
   {
@@ -28,6 +27,7 @@ const routes: Routes = [
   declarations: [],
   imports: [
     RouterModule.forChild(routes),
+    
   ],
   exports: [RouterModule]
 })
