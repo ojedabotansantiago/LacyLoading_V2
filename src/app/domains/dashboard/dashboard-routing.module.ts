@@ -11,10 +11,11 @@ const routes: Routes =[
 ]
 
 @NgModule({
-  declarations: [DashboardComponent],
+  declarations: [],
   imports: [
     RouterModule.forChild(routes),
     TranslateModule
-  ]
+  ],
+  exports: [RouterModule]
 })
 export class DashBoardRoutingModule { }
