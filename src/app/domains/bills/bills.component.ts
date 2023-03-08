@@ -11,7 +11,8 @@ export class BillsComponent implements OnInit {
   constructor(private BillsHttpService: BillsHttpService) { }
 
   ngOnInit(): void {
-    this.BillsHttpService.getBills()
+    this.BillsHttpService.getBills();
+    console.log('bills loaded')
   }
 
 }

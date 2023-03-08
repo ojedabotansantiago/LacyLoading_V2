@@ -22,8 +22,7 @@ import { HttpClientModule } from "@angular/common/http";
     HeaderComponent
   ],
   imports: [
-    BrowserModule,
-    
+    BrowserModule,    
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
