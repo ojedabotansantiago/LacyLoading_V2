@@ -1,10 +1,10 @@
 {
 	"folders": [
     {
-      "path": "."
+      "path": "../../segurCaixa/dev-dhs-receipts-management-angular-wc"
     },
     {
-      "path": "../../segurCaixa/dev-taller-cm-angular-apps"
+      "path": "../../segurCaixa/dev-dhs-refund-angular-wc"
     }
   ],
   "settings": {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BillsHttpService } from './ports/bills-http.service';
 
 @Component({
   selector: 'app-bills',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BillsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private BillsHttpService: BillsHttpService) { }
 
   ngOnInit(): void {
+    this.BillsHttpService.getBills()
   }
 
 }
