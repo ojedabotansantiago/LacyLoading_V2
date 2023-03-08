@@ -2,29 +2,34 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { BillsComponent } from './bills.component';
+import { BillsDetailComponent } from './bills-detail/bills-detail.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: BillsComponent,
     children: [
       {
+        path: '',
+        component: BillsComponent
+      },
+      {
         path: 'detail',
-        loadChildren: () => import('./bills-detail/bills-detail.module').then(m => m.BillsDetailModule)
-      }
+        component: BillsDetailComponent
+      },
+      { path: '**', redirectTo: 'detail' }
     ]
-  },
-  {
-    path: 'dashBoard', 
-    loadChildren: () => import('../dashboard/dashboard.module').then(m => m.DashboardModule),
-  },
+  }
 ];
+//        loadChildren: () => import('./bills-detail/bills-detail.module').then(m => m.BillsDetailModule)
+
 
 @NgModule({
-  declarations: [BillsComponent],
+  declarations: [BillsComponent, BillsDetailComponent],
   imports: [
     RouterModule.forChild(routes),
-    TranslateModule
+    TranslateModule,
+
   ]
 })
 export class BillsRoutingModule { }
+
