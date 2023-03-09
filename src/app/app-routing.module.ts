@@ -15,6 +15,10 @@ const routes: Routes = [
     loadChildren: () => import('./domains/bills/bills.module').then(m => m.BillsModule),
   },
   {
+    path: 'cases', 
+    loadChildren: () => import('./domains/cases/cases.module').then(m => m.CasesModule),
+  },
+  {
     path: '**',
     redirectTo: 'dashBoard',
   } 

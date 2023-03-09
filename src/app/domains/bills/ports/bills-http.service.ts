@@ -11,6 +11,7 @@ export class BillsHttpService {
    * getBills
    */
   public getBills() {
+    console.log('hellow billsHttpService');
     return 'string';
   }
 }
