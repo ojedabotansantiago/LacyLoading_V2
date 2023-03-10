@@ -43,12 +43,12 @@
         "ignoreImports": true
       }
     ],
-    "no-unexpected-multiline": "error",
-    "trailingComma": "none",
-    "endOfLine": "auto",
     "curly": [
       "error",
       "all"
-    ]
+    ],
+    "no-unexpected-multiline": "error",
+    "trailingComma": "none",
+    "endOfLine": "auto",
   }
 }
