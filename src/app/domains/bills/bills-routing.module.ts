@@ -10,26 +10,21 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: BillsComponent
+        component: BillsComponent,
       },
       {
         path: 'detail',
-        component: BillsDetailComponent
+        component: BillsDetailComponent,
       },
-      { path: '**', redirectTo: '' }
-    ]
+      { path: '**', redirectTo: '' },
+    ],
   }
 ];
-//        loadChildren: () => import('./bills-detail/bills-detail.module').then(m => m.BillsDetailModule)
-
+//loadChildren: () => import('./bills-detail/bills-detail.module').then(m => m.BillsDetailModule)
 
 @NgModule({
   declarations: [],
-  imports: [
-    RouterModule.forChild(routes),
-    
-  ],
-  exports: [RouterModule]
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
 })
 export class BillsRoutingModule { }
-
